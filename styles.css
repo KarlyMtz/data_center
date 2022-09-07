@@ -1,0 +1,363 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Pattern from https://www.heropatterns.com/ */
+    font-size: 16px;
+    background-color: #eceded;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffffff' fill-opacity='0.49'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.menu {
+    font-size: 17px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20 px 0;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul.menu {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.nav_brand {
+    width: 150px;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    font-size: 120%;
+    opacity: .7;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+html {
+    height: 100%;
+}
+
+iframe {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px 0;
+}
+
+.material-symbols-outlined {
+
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+a:link {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+#formulario {
+    background-image: url(/fotos/cover.jpeg);
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*SHOWCASE*/
+.showcase {
+    width: 100%;
+    height: 280px;
+    padding: 100px;
+    background: url(/fotos/cover.jpeg) no-repeat center center/cover;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: gray;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: .7;
+}
+
+.showcase h2 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showcase p {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/* Responsive Button */
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+/*CARDS DASHBOARDS*/
+
+.card-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-dashboard img {
+    width: 100%;
+    height: 180px;
+}
+
+.card-dashboard h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.card-dashboard a {
+    padding: 10px 0;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.card-dashboard a:hover {
+    font-size: 20px;
+}
+
+/*BANNER SECTION ONE*/
+.banner-section-one {
+    width: 100%;
+    height: 300px;
+    background: url(/fotos/Service-Comprar-L-1536x864.jpeg) no-repeat center center/cover;
+    margin-bottom: 40px;
+}
+
+.banner-section-one .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: aliceblue;
+}
+
+.banner-section-one p .banner-section-one h2 {
+    margin: 20px 0 30px 0;
+}
+
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #E94560;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+.links a:visited {
+    color: black;
+}
+
+/* FOOTER LINKS */
+.footer-links {
+    background: rgb(219, 217, 217);
+    color: black;
+    font-size: 12px;
+    padding: 35px 0;
+    text-decoration: none;
+}
+
+.footer-links h3 {
+    color: black;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.footer-links li {
+    line-height: 2.8;
+    text-decoration: none;
+}
+
+.footer {
+    background: rgb(219, 217, 217);
+    color: #E94560;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer-container li a {
+    text-decoration: none;
+}
+.footer-container li a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+/*CARDS BANNER TWO*/
+.card-banner-two {
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-banner-two .content {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-banner-two .content a img {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.card-banner-two .content h2 {
+    color: #533483;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .card-dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcase {
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu ul.nav_menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        width: 50%;
+        height: 150%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu ul.nav_menu li {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .menu ul.nav_menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .menu ul.nav_menu.show {
+        transform: translateX(-20px);
+    }
+
+    .menu ul.nav_menu_right {
+        margin-right: 50px;
+    }
+
+    .card-banner-two {
+        display: none;
+    }
+}
